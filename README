@@ -1,0 +1,5 @@
+This is a Java software library  to generate data reports in various formats using XSL.
+
+A report is described in XML.  The used schema strictly separates the data model definition and the output layout description.
+Data is then fetched for example from JDBC data sources according to an SQL query, or from data available as XML or CSV.  It is then grouped an put in nested records and nested record sets which are sorted according to the definition. Calculations can be performed on the data, namely formula and aggregate function evaluation.  The data structure is put into an internal XML format.
+The final output is obtained by applying the layout description, which is an XSLT stylesheet, to the internal XML data. This can generate HTML output, for example, or XSL-FO output, which can be transformed by an FO processor to PDF and other formats.
